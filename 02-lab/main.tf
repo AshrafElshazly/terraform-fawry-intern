@@ -79,5 +79,5 @@ resource "aws_instance" "server2" {
   tags = {
     Name = "server2"
   }
-  depends_on = [aws_instance.server2]
+  depends_on = [aws_instance.server1]
 }
