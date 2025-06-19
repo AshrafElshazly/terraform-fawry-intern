@@ -8,9 +8,9 @@ terraform {
 
   backend "s3" {
     bucket         = "fawry-intern"
-    key            = "global/s3/terraform.tfstate"
+    key            = "terraform/state/terraform.tfstate"
     region         = "us-west-2"
-    dynamodb_table = "terraform-state-lock-2"
+    dynamodb_table = "terraform-state-lock"
     encrypt        = true
   }
 }
